@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whitetwo"
+    android:paddingHorizontal="@dimen/_20sdp"
+    tools:context=".LoginFragment">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/title_icon"
+        android:layout_width="@dimen/_83sdp"
+        android:layout_height="@dimen/_83sdp"
+        android:layout_marginTop="@dimen/_67sdp"
+        android:src="@drawable/ic_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/main_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/sf_pro_display_bold"
+        android:text="My Home"
+        android:textColor="@color/green_dark"
+        android:textSize="@dimen/_33ssp"
+        app:layout_constraintEnd_toEndOf="@+id/title_icon"
+        app:layout_constraintStart_toStartOf="@+id/title_icon"
+        app:layout_constraintTop_toBottomOf="@+id/title_icon" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/login_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:fontFamily="@font/aspira_regular"
+        android:gravity="center_horizontal"
+        android:lineSpacingExtra="-4sp"
+        android:text="Login To Your Account"
+        android:textColor="@color/force_black"
+        android:textSize="@dimen/_17ssp"
+        app:layout_constraintEnd_toEndOf="@+id/main_title"
+        app:layout_constraintStart_toStartOf="@+id/main_title"
+        app:layout_constraintTop_toBottomOf="@+id/main_title" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/ed_email"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_marginTop="@dimen/_33sdp"
+        android:background="@drawable/layout_edit"
+        android:elevation="@dimen/_10sdp"
+        android:gravity="top"
+        android:hint="Email"
+        android:padding="@dimen/_18sdp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/hint_text"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="@+id/login_heading"
+        app:layout_constraintStart_toStartOf="@+id/login_heading"
+        app:layout_constraintTop_toBottomOf="@+id/login_heading" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/ed_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/layout_edit"
+        android:elevation="@dimen/_10sdp"
+        android:gravity="top"
+        android:hint="Password"
+        android:padding="@dimen/_18sdp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/hint_text"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintEnd_toEndOf="@+id/ed_email"
+        app:layout_constraintStart_toStartOf="@+id/ed_email"
+        app:layout_constraintTop_toBottomOf="@+id/ed_email" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/txt_button_panel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_17sdp"
+        android:fontFamily="@font/aspira_regular"
+        android:lineSpacingExtra="2sp"
+        android:text="or Continue With"
+        android:textColor="@color/force_black"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintEnd_toEndOf="@+id/ed_password"
+        app:layout_constraintStart_toStartOf="@+id/ed_password"
+        app:layout_constraintTop_toBottomOf="@+id/ed_password" />
+</androidx.constraintlayout.widget.ConstraintLayout>
